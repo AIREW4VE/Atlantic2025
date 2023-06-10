@@ -1,7 +1,7 @@
 .countdown{
   display: flex;
   justify-content: center;
-  margin-top 0px
+  margin-top 2px
 }
 .countdown div{
   flex-basis: 100px;
