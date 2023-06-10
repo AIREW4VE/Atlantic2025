@@ -5,10 +5,12 @@
 .countdown div{
   flex-basis: 100px;
   font-size: 10px;
+  text-align: center;
 }
 .countdown div p{
   font-size: 30px;
-  margin-bottom: -14px
+  margin-bottom: -20px;
+  text-align: center;
   
   
 }
