@@ -6,6 +6,7 @@
 .countdown div{
   flex-basis: 100px;
   font-size: 10px;
+  margin-top: 0px;
   
 }
 .countdown div p{
@@ -22,6 +23,7 @@
   margin-top: 5px;
   align-self: center;
   text-align: center;
+  color: red;
   
   
 }
