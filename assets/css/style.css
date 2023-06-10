@@ -1,0 +1,30 @@
+.countdown{
+  display: flex;
+  justify-content: center;
+  margin-top: -10px
+}
+.countdown div{
+  flex-basis: 100px;
+  font-size: 10px;
+  
+  
+}
+.countdown div p{
+  font-size: 30px;
+  align-self: center;
+  margin-bottom: -14px;
+  color: orange;
+}
+.countdown div span{
+  align-self: center;
+}
+
+.racetext{
+  
+  align-self: center;
+  text-align: center;
+  
+  margin-top: -30px;
+  
+  
+}
