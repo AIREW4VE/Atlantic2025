@@ -1,6 +1,5 @@
 .countdown{
   display: flex;
-  
   justify-content: center;
 }
 .countdown div{
@@ -10,11 +9,15 @@
 }
 .countdown div p{
   font-size: 30px;
+  align-self: center;
   margin-bottom: -14px;
   color: orange;
+}
+.countdown div span{
+  align-self: center;
 }
 
 .race_text{
   margin-top: 4px;
-  text-align: center;
+  align-self: center;
 }
