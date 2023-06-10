@@ -21,4 +21,6 @@
 .racetext{
   margin-top: 5px;
   align-self: center;
+  text-align: center;
+  color: red;
 }
