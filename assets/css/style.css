@@ -4,16 +4,14 @@
 }
 .countdown div{
   flex-basis: 100px;
-  font-size: 30px;
+  font-size: 10px;
 }
 .countdown p{
   font-size: 30px;
   
   
 }
-.major{
-  position: absolute;
-}  
+ 
 
 .countdown_text{
   font-size:30px;
