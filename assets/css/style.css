@@ -10,4 +10,10 @@
   text-align: center;
   
 }
-.major{position: absolute;}    
+.major{
+  position: absolute;
+}  
+
+.countdown_text{
+  font-size:30px;
+}
