@@ -1,6 +1,7 @@
 .countdown{
   display: flex;
   text-align: center;
+  justify-content: center;
 }
 .countdown div{
   flex-basis: 100px;
