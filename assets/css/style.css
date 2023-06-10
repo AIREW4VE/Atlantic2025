@@ -1,7 +1,7 @@
 .countdown{
   display: flex;
   justify-content: center;
-  margin-top: 2px
+  margin-top: 20px
 }
 .countdown div{
   flex-basis: 100px;
@@ -20,10 +20,10 @@
 }
 
 .racetext{
-  margin-bottom: -15px;
+  
   align-self: center;
   text-align: center;
-  color: red;
+  
   
   
 }
