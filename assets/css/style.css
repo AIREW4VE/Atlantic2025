@@ -15,8 +15,13 @@
   
   
 }
- 
 
-.countdown_text{
-  font-size:30px;
+.countdown div span{
+  text-align: center;
+}
+
+
+.race_text{
+  margin-top: 4px;
+  text-align: center;
 }
