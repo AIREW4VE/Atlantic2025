@@ -43,3 +43,19 @@
   
 
 }
+
+
+
+.test {
+  margin-top: 50px;
+  margin-left: 10px;
+  display: flex;
+  float: left;
+  column-gap: 200%;
+}
+
+.FinalHeaderHomePage {
+  font-size: 3em;
+  color:white
+}
+
