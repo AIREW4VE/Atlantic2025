@@ -28,3 +28,18 @@
   
   
 }
+
+.first{
+
+  color:yellow;
+  font-weight: 200000;
+  font-size: 3em;
+}
+
+.SecondRow{
+
+  color:yellow;
+  /*padding-left:285px;*/
+  
+
+}
