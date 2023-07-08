@@ -59,3 +59,18 @@
   color:white
 }
 
+iframe {
+
+  
+  margin: 0 auto;
+  display:block
+}
+
+.FootHeaderLinks {
+  margin-left: 100px;
+  
+}
+
+.funfacts {
+  font-size: 1.5em;
+}
