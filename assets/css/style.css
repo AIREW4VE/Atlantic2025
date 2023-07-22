@@ -74,3 +74,100 @@ iframe {
 .funfacts {
   font-size: 1.5em;
 }
+
+
+.column1 {
+  float: left;
+  width: 20%;
+  padding: 50px;
+}
+
+.column2 {
+  float: left;
+  width: 60%;
+  padding: 5px;
+}
+.column3 {
+  float: left;
+  width: 20%;
+  padding: 50px;
+}
+
+/* Clear floats after image containers */
+.row {
+  content: "";
+  clear: both;
+  display: table;
+  margin-top: 100px
+}
+
+.d_text p {
+  margin:100px;
+}
+
+.column4 {
+  float: left;
+  width: 50%;
+  padding: 60px
+}
+
+.column5 {
+  float: left;
+  width: 50%;
+  padding: 60px
+}
+
+.column5 h1 {
+  text-align: center
+}
+
+.column5 p  {
+
+  font-weight: bold;
+  font-size: 2.2vw;
+}
+
+.column6 {
+  float: left;
+  width: 50%;
+  padding: 60px
+}
+
+
+.river {
+  display: grid;
+      place-items: center;
+      margin-bottom: 100px;
+}
+
+.bottom {margin-bottom: 100px;}
+
+.icons{ position: fixed;
+  overflow: auto;
+  width: 100%;
+  background: #242943 ;}
+.icons ul {
+
+  display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    
+    background: #242943 ;
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+  
+ 
+}
+
+.icons li {
+  display: block;
+  flex: 0 1 auto; /* Default */
+  list-style-type: none;
+  border-top: #242943;
+  background: #242943 ;
+  display: table-cell;
+}
+
+
+
