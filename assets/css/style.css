@@ -79,18 +79,21 @@ iframe {
 .column1 {
   float: left;
   width: 20%;
-  padding: 50px;
+  
+  
 }
 
 .column2 {
   float: left;
   width: 60%;
-  padding: 5px;
+  
+  
 }
 .column3 {
   float: left;
   width: 20%;
-  padding: 50px;
+  
+  
 }
 
 /* Clear floats after image containers */
@@ -100,6 +103,7 @@ iframe {
   display: table;
   margin-top: 100px
 }
+
 
 .d_text p {
   margin:100px;
@@ -169,5 +173,31 @@ iframe {
   display: table-cell;
 }
 
+.row4 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: static;
+  width: 100%;
+  z-index: -50;
+}
 
+.column7 {
+  
+  width: 33%;
+  
+  
+}
 
+.column8 {
+  
+  width: 33%;
+  
+  
+}
+.column9 {
+  
+  width: 33%;
+  
+  
+}
