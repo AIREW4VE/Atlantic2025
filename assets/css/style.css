@@ -1,7 +1,8 @@
 .countdown{
   display: flex;
   justify-content: center;
-  margin-top: -10px
+  margin-top: -10px;
+  margin-bottom: 40px;
 }
 .countdown div{
   flex-basis: 100px;
@@ -75,29 +76,47 @@ iframe {
   font-size: 1.5em;
 }
 
-
-.column1 {
-  float: left;
-  width: 20%;
+.row_top {
+  justify-content: center;
   
+  margin-top: 100px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+
+/*
+.column1 {
+  width: 100%;
+
   
 }
 
 .column2 {
-  float: left;
-  width: 60%;
-  
+  width: 100%;
+
   
 }
 .column3 {
-  float: left;
-  width: 20%;
+  width: 100%;
   
   
-}
+}*/
 
 /* Clear floats after image containers */
+
+/* 
 .row {
+  content: "";
+  clear: both;
+  display: table;
+  margin-top: 100px
+}*/
+
+.row1 {
   content: "";
   clear: both;
   display: table;
@@ -200,4 +219,84 @@ iframe {
   width: 33%;
   
   
+}
+
+.mediacoverage {
+
+
+  justify-content: center;
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+
+}
+
+.space {
+
+  margin-top: 50px;
+}
+
+.SponserHeader {
+
+
+  justify-content: center;
+  margin-top: -50px;
+
+  font-size: 24px;
+ 
+  font-weight: bold;
+  text-decoration: underline;
+  width: 50%;
+
+
+}
+
+.social_media {
+  display: flex;
+  
+  flex-wrap: wrap;
+  flex-direction:column;
+  height: 200px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  
+
+  list-style-type: none;
+}
+
+
+.Instagram {
+  width: 40%;
+  margin-LEFT :10px;
+}
+.Tiktok {
+  width : 40%;
+  margin-left: 10px
+
+}
+
+@media screen and (max-width: 300px) {
+  .social_media { height: auto; }
+}
+
+
+.totals {
+
+  text-align: center;
+}
+
+.major {
+
+  margin-top:  40px;
+  margin-bottom: 40px;
+}
+
+.GreatOuse {
+
+
+  font-weight: bold;
+  font-size: 2.2vw;
+
 }
