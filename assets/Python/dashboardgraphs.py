@@ -26,9 +26,13 @@ River = train_groupby['RiverDistance / km'].to_numpy()
 ax.bar(x_value, Erg, color = "#FF00FF", alpha = 0.8,label ='Erg Distance' )
 ax.bar(x_value, River, bottom = Erg, color = "blue", alpha = 0.8,label = 'River Distance')
 ax.vlines([4],0,105,colors='black',ls='--',label='Capsize')
-ax.legend()
+ax.vlines([43],0,105,colors='red',ls='--',label='Great Ouse Marathon 2023')
+ax.vlines([47],0,105,colors='green',ls='--',label='Ancholme Head Race 2023')
+
+ax.legend(loc="upper center", 
+           ncol=2,prop={'size': 6})
 ax.set_xlabel('Week Number from $13^{th}$ Nov 2022')
-ax.set_ylabel('Distance / km ')
+ax.set_ylabel('Weekly Distance / km ')
 plt.savefig(r'C:\Users\jake\Documents\AtlanticCampaignGitHub\Atlantic2025\assets\Python\Outputs\TrainingBarChart\BarChartDistance.png')
 plt.show()
 
