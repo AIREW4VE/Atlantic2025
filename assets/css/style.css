@@ -179,6 +179,7 @@ iframe {
     margin: 0;
     padding: 0;
     margin-top: 100px;
+    
   
  
 }
@@ -189,6 +190,7 @@ iframe {
   list-style-type: none;
   border-top: #242943;
   background: #242943 ;
+  font-size: 0.8em;
   display: table-cell;
 }
 

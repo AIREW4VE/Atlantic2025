@@ -2755,6 +2755,33 @@ input, select, textarea {
 			width: 40%;
 		}
 
+		.tiles article.final {
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-transition: -moz-transform 0.25s ease, opacity 0.25s ease, -moz-filter 1s ease, -webkit-filter 1s ease;
+			-webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;
+			-ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
+			transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
+			padding: 4em 4em 2em 4em ;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			cursor: default;
+			height: 40vh;
+			max-height: 40em;
+			min-height: 23em;
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+		}
+		
+
 			.tiles article .image {
 				display: none;
 			}
@@ -2900,6 +2927,8 @@ input, select, textarea {
 				}
 
 		}
+
+
 
 /* Contact Method */
 
