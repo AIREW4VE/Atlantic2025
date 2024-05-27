@@ -13,8 +13,7 @@ training_data =pd.read_excel(r"C:\Users\jake\Documents\AtlanticCampaignGitHub\At
 training_data['Week_of_year'] = training_data['Date'].dt.isocalendar().week
 training_data['Year'] = training_data['Date'].dt.isocalendar().year
 training_data['Epoch'] = (training_data['Year']-2022)*52 +training_data['Week_of_year'] -45
-
-train_groupby = training_data.groupby('Epoch',as_index=False)[['ErgDistance / km','RiverDistance / km']].sum()
+train_groupby = training_data.groupby('Epoch',as_index=False)[['ErgDistance / km','RiverDistance / km','OceanDistance / km']].sum()
 
 
 fig, ax = plt.subplots()
@@ -22,9 +21,13 @@ fig, ax = plt.subplots()
 x_value = train_groupby['Epoch'].to_numpy()
 Erg = train_groupby['ErgDistance / km'].to_numpy()
 River = train_groupby['RiverDistance / km'].to_numpy()
+Ocean = train_groupby['OceanDistance / km'].to_numpy()
+
 
 ax.bar(x_value, Erg, color = "#FF00FF", alpha = 0.8,label ='Erg Distance' )
 ax.bar(x_value, River, bottom = Erg, color = "blue", alpha = 0.8,label = 'River Distance')
+ax.bar(x_value, Ocean, bottom = Erg, color = "cyan", alpha = 0.8,label = 'Ocean Distance')
+
 ax.vlines([4],0,105,colors='black',ls='--',label='Capsize')
 ax.vlines([43],0,105,colors='red',ls='--',label='Great Ouse Marathon 2023')
 ax.vlines([47],0,105,colors='green',ls='--',label='Ancholme Head Race 2023')
