@@ -223,6 +223,8 @@ iframe {
   
 }
 
+
+
 .mediacoverage {
 
 
@@ -317,4 +319,52 @@ iframe {
   width: 50%;
   margin-top:  40px;
   margin-bottom: 40px;
+}
+
+
+.row5 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: static;
+  width: 100%;
+  z-index: -50;
+}
+
+.column10 {width: 50%}
+
+.icons_desktop{ position: fixed;
+  overflow: auto;
+  width: 100%;
+  background: #242943 ;}
+.icons_desktop ul {
+
+  display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    
+    background: #242943 ;
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+    
+  
+ 
+}
+
+.icons_desktop li {
+  display: block;
+  flex: 0 1 auto; /* Default */
+  list-style-type: none;
+  border-top: #242943;
+  background: #242943 ;
+  font-size: 0.8em;
+  display: table-cell;
+}
+
+
+@media(max-width:1200px){
+  .icons_desktop{
+    display:none;
+  }
 }
