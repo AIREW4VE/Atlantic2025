@@ -25,18 +25,53 @@
 							<li><a href="https://www.facebook.com/jake.still.58" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 							<li><a href="https://www.instagram.com/jakedarcy.still/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="https://www.linkedin.com/in/jake-still-160011200/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-					
-						<li><a href="index.html">Home</a></li>
-						<li><a href="landing.html"><span class="FootHeaderLinks" >Challenge</span></a></li>
-						<li><a href="dashboard.html"><span class="FootHeaderLinks" >Training Stats</span></a></li>
+						
+						<li><a href="index.html" class="FootHeaderLinks"><span>Home</a></li>
+						<li><a href="landing.html" class="FootHeaderLinks"><span> Challenge</span></a></li>
+						<li><a href="dashboard.html" class="FootHeaderLinks"><span>Training Stats</span></a></li>
 						<li><a href="AboutMyself.html" class="FootHeaderLinks"><span >About Jake</span></a></li>
 						<li><a href="Sponsors.html" class="FootHeaderLinks"><span >Sponsors</span></a></li>
-						<li><img  height = "50px" width ="50px" src="images/AireWaveLogoFinal.png" ></li>
-					</ul>
-					
-					
 						
+						<!--li><img  height = "50px" width ="50px" src="images/AireWaveLogoFinal.png" class="label"></li-->
+					</ul>
+
 					
+					
+					
+					
+						<div class="nav" id="nav">
+							
+
+							<a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+							<a href="index.html">Home</a>
+							<a href="landing.html">Challenge</a>
+							<a href="dashboard.html">Training Stats</a>
+							<a href="AboutMyself.html">About Jake</a>
+							<a href="Sponsors.html">Sponsors</a>
+							
+							<ul class="mobile">
+								<li><a href="https://www.facebook.com/jake.still.58" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/jakedarcy.still/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://www.linkedin.com/in/jake-still-160011200/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</div>
+						
+						<span onclick="openNav()" class="open" id="open">&#9776</span>
+
+					
+					
+					
+					<script>
+						function openNav() {
+							document.getElementById("open").style.display = "none";
+							document.getElementById("nav").style.width = "100%";
+						}
+						function closeNav() {
+							
+							document.getElementById("nav").style.width = "0";
+							document.getElementById("open").style.display = "flex";
+						}
+					</script>	
 				</header>
 
 				<!-- Menu -->
@@ -55,7 +90,10 @@
 
 				<!-- Banner -->
 				<!-- Note: The "styleN" class below should match that of the header element. -->
-					<section  >
+				
+				<section id="banner" style="min-height: 0px; height:0px">
+					
+				</section>
 						<div class="row5">
 							<div class="column10">
 								<a href = "https://theriverstrust.org/">
@@ -68,7 +106,7 @@
 								</a>
 							</div>
 						</div>
-					</section>
+					
 
 				<!-- Main -->
 				<div id="main">
@@ -82,9 +120,9 @@
 
 
 								</p>
-								<!--a href="https://www.justgiving.com/page/jake-still-1704754587792?utm_medium=fundraising&utm_content=page%2Fjake-still-1704754587792&utm_source=copyLink&utm_campaign=pfp-share">
-									<button type="button">Donate </button>
-								</a-->
+								<a href = "https://gofund.me/586cea9c">
+									<button type="button">Donate here </button>
+								</a>
 							</div>
 						</section>
 				
@@ -254,7 +292,6 @@
 					</footer-->
 
 			</div>
-
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

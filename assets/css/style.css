@@ -33,8 +33,7 @@
 .first{
 
   color:yellow;
-  font-weight: 200000;
-  font-size: 3em;
+  
 }
 
 .SecondRow{
@@ -50,9 +49,9 @@
 .test {
   margin-top: 50px;
   margin-left: 10px;
-  display: flex;
-  float: left;
-  column-gap: 200%;
+  
+  float: flex;
+  column-gap: 50%;
 }
 
 .FinalHeaderHomePage {
@@ -165,34 +164,6 @@ iframe {
 
 .bottom {margin-bottom: 100px;}
 
-.icons{ position: fixed;
-  overflow: auto;
-  width: 100%;
-  background: #242943 ;}
-.icons ul {
-
-  display: flex;
-    align-items: stretch; /* Default */
-    justify-content: space-between;
-    
-    background: #242943 ;
-    margin: 0;
-    padding: 0;
-    margin-top: 100px;
-    
-  
- 
-}
-
-.icons li {
-  display: block;
-  flex: 0 1 auto; /* Default */
-  list-style-type: none;
-  border-top: #242943;
-  background: #242943 ;
-  font-size: 0.8em;
-  display: table-cell;
-}
 
 .row4 {
   display: flex;
@@ -328,17 +299,19 @@ iframe {
   flex-direction: row;
   position: static;
   width: 100%;
-  z-index: -50;
+  z-index: 50;
 }
 
 .column10 {width: 50%}
 
-.icons_desktop{ position: fixed;
+.icons{ position: fixed;
   overflow: auto;
   width: 100%;
   background: #242943 ;}
-.icons_desktop ul {
 
+  
+.icons ul {
+  list-style-type: none;
   display: flex;
     align-items: stretch; /* Default */
     justify-content: space-between;
@@ -347,24 +320,99 @@ iframe {
     margin: 0;
     padding: 0;
     margin-top: 100px;
-    
+    position: fixed;
+  top: 0;
+  width: 100%;
   
  
 }
 
-.icons_desktop li {
+.icons li {
   display: block;
   flex: 0 1 auto; /* Default */
   list-style-type: none;
   border-top: #242943;
   background: #242943 ;
   font-size: 0.8em;
-  display: table-cell;
+  display: inline;
+  
+}
+
+.icons li a:hover {
+  background-color: #7063e7;
 }
 
 
-@media(max-width:1200px){
-  .icons_desktop{
+@media(max-width:1380px){
+  .icons{
     display:none;
   }
 }
+
+@media(min-width:1380px){
+  .nav{
+    display:none;
+  }
+}
+
+.nav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(34,65,93,0.9);
+  transition: 0.5s;
+  display: block;
+  overflow-x: hidden;
+  
+}
+.nav a {
+  clear: left;
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-size: 22px;
+  transition: 0.3s;
+  padding: 0.5em;
+}
+.nav a:not(:first-child):hover {
+  background-color: #f7941d;
+}
+.close {
+  float: left;
+  font-size: 30px;
+  margin: 1em 0 0 1em;
+}
+
+
+
+.mobile ul {
+  list-style-type: none;
+  display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    
+    background: #242943 ;
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+  top: 0;
+  width: 100%;
+  
+ 
+}
+
+.mobile li {
+  float: left;
+  list-style-type: none;
+  display: block;
+  flex: 0 1 auto; /* Default */
+
+}
+
+.open {
+  font-size: 3em;
+
+}
+
+
