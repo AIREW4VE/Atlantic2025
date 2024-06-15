@@ -24,23 +24,58 @@
 
 				<!-- Header -->
 				<header id="header" class="alt">
+
 					<ul class="icons">
+						<li><a href="https://www.facebook.com/jake.still.58" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/jakedarcy.still/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.linkedin.com/in/jake-still-160011200/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				
+					<li><a href="index.html" class="FootHeaderLinks"><span> Home</span></a></li>
+					<li><a href="landing.html" class="FootHeaderLinks"><span>Challenge</span></a></li>
+					<li><a href="dashboard.html" class="FootHeaderLinks"><span >Training Stats</span></a></li>
+					<li><a href="AboutMyself.html" class="FootHeaderLinks"><span >About Jake</span></a></li>
+					<li><a href="Charity.html" class="FootHeaderLinks"><span>Charity</a></li>
+					<!--li><img  height = "50px" width ="50px" src="images/AireWaveLogoFinal.png" class="label"></li-->
+				</ul>
+	
+				
+				
+				
+				
+					<div class="nav" id="nav">
+						
+	
+						<a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+						<a href="index.html">Home</a>
+						<a href="landing.html">Challenge</a>
+						<a href="dashboard.html">Training Stats</a>
+						<a href="AboutMyself.html">About Jake</a>
+						<a href="Charity.html">Charity</a>
+						<ul class="mobile">
 							<li><a href="https://www.facebook.com/jake.still.58" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 							<li><a href="https://www.instagram.com/jakedarcy.still/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="https://www.linkedin.com/in/jake-still-160011200/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</div>
 					
-						<li><a href="index.html">Home</a></li>
-						<li><a href="landing.html"><span class="FootHeaderLinks" >Challenge</span></a></li>
-						<li><a href="dashboard.html"><span class="FootHeaderLinks" >Training Stats</span></a></li>
-						<li><a href="AboutMyself.html" class="FootHeaderLinks"><span >About Jake</span></a></li>
-						<li><a href="Charity.html"><span class="FootHeaderLinks" >The Rivers Trust</span></a></li>
-						<li><img  height = "50px" width ="50px" src="images/AireWaveLogoFinal.png" ></li>
-					</ul>
-					
-					
+					<span onclick="openNav()" class="open" id="open">&#9776</span>
+	
+				
+				
+				
+				<script>
+					function openNav() {
+						document.getElementById("open").style.display = "none";
+						document.getElementById("nav").style.width = "100%";
+					}
+					function closeNav() {
 						
-					
-				</header>
+						document.getElementById("nav").style.width = "0";
+						document.getElementById("open").style.display = "flex";
+					}
+				</script>
+	
+			</header>
 
 				<!-- Menu -->
 					<nav id="menu">
@@ -58,6 +93,10 @@
 
 				<!-- Banner -->
 				<!-- Note: The "styleN" class below should match that of the header element. -->
+
+				<section id="banner" style="min-height: 0px; height:0px">
+					
+				</section>
 					<section  >
 						<div >
 							<img class= "mediacoverage"
@@ -86,7 +125,7 @@
 								<button type="button">Download the Coporate Sponsorship pack!</button>
 								</a>
 								<a href = "https://gofund.me/586cea9c">
-									<button type="button">Sponsor me here </button>
+									<button type="button">Donate here </button>
 								</a>
 								</div>
 							</section>

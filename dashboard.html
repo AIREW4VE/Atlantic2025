@@ -20,25 +20,60 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header" class="alt">
-						<ul class="icons">
+				<header id="header" class="alt">
+					<ul class="icons">
+							<li><a href="https://www.facebook.com/jake.still.58" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/jakedarcy.still/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.linkedin.com/in/jake-still-160011200/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					
+						<li><a href="index.html" class="FootHeaderLinks"><span> Home</span></a></li>
+						<li><a href="landing.html" class="FootHeaderLinks"><span>Challenge</span></a></li>
+						<li><a href="AboutMyself.html" class="FootHeaderLinks"><span >About Jake</span></a></li>
+						<li><a href="Sponsors.html" class="FootHeaderLinks"><span >Sponsors</span></a></li>
+						<li><a href="Charity.html" class="FootHeaderLinks"><span>Charity</a></li>
+						<!--li><img  height = "50px" width ="50px" src="images/AireWaveLogoFinal.png" class="label"></li-->
+					</ul>
+
+					
+					
+					
+					
+						<div class="nav" id="nav">
+							
+
+							<a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+							<a href="index.html">Home</a>
+							<a href="landing.html">Challenge</a>
+							<a href="AboutMyself.html">About Jake</a>
+							<a href="Sponsors.html">Sponsors</a>
+							<a href="Charity.html">Charity</a>
+							<ul class="mobile">
 								<li><a href="https://www.facebook.com/jake.still.58" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 								<li><a href="https://www.instagram.com/jakedarcy.still/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 								<li><a href="https://www.linkedin.com/in/jake-still-160011200/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</div>
 						
-                            <li><a href="index.html">Home</a></li>
-							<li><a href="landing.html"><span class="FootHeaderLinks" >Challenge</span></a></li>
-							<li><a href="AboutMyself.html" class="FootHeaderLinks"><span >About Jake</span></a></li>
-							<li><a href="Sponsors.html" class="FootHeaderLinks"><span >Sponsors</span></a></li>
-							<li><a href="Charity.html"><span class="FootHeaderLinks" >The Rivers Trust</span></a></li>
+						<span onclick="openNav()" class="open" id="open">&#9776</span>
 
-                            <li><img  height = "50px" width ="50px" src="images/AireWaveLogoFinal.png" ></li>
-						</ul>
-						
-						
+					
+					
+					
+					<script>
+						function openNav() {
+							document.getElementById("open").style.display = "none";
+							document.getElementById("nav").style.width = "100%";
+						}
+						function closeNav() {
 							
+							document.getElementById("nav").style.width = "0";
+							document.getElementById("open").style.display = "flex";
+						}
+					</script>	
+					
 						
-					</header>
+					
+				</header>
 
 				<!-- Menu -->
 					<!--nav id="menu">
@@ -53,8 +88,10 @@
 					</nav-->
 
 				<!-- Main -->
+				<section id="banner" style="min-height: 0px; height:0px">
+					
+				</section>
 					<div id="main" class="alt">
-
 						<!-- One -->
 							<section id="one">
 								<div class="row_top">
@@ -75,13 +112,14 @@
 
 								<section id="one">
 									<div class="inner">
-                                <div class ="d_text">
-                                    <p > The primary reason I chose "Aire Wave" as my Atlantic alias is rooted in the countless hours I've spent rowing along the river Aire. To prepare for the physical demands of the challenge, I joined the Bradford Amateur Rowing Club during the summer of 2021, aiming to enhance my sculling proficiency for long distances.
-                                        Ironically, this particular stretch of the river Aire, located near the Weir in Shipley Saltaire, is one of the shortest rowing courses merely 700 meters upstream, often involving numerous spins.
-                                        Below, you'll find graphs and stats showcasing my current rowing metrics since Nov 13<sup>th</sup> 2022. </p>
-                                </div>
+                                		<div class ="d_text">
+                                    		<p > The primary reason I chose "Aire Wave" as my Atlantic alias is rooted in the countless hours I've spent rowing along the river Aire. To prepare for the physical demands of the challenge, I joined the Bradford Amateur Rowing Club during the summer of 2021, aiming to enhance my sculling proficiency for long distances.
+                                        	Ironically, this particular stretch of the river Aire, located near the Weir in Shipley Saltaire, is one of the shortest rowing courses merely 700 meters upstream, often involving numerous spins.
+                                        	Below, you'll find graphs and stats showcasing my current rowing metrics since Nov 13<sup>th</sup> 2022. </p>
+                                		</div>
+								</section>
 							</section>
-							</section>
+						</section>
 
 
 							<section id="two" class="spotlights">
