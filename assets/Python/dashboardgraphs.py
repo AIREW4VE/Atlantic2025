@@ -26,7 +26,7 @@ Ocean = train_groupby['OceanDistance / km'].to_numpy()
 
 ax.bar(x_value, Erg, color = "#FF00FF", alpha = 0.8,label ='Erg Distance' )
 ax.bar(x_value, River, bottom = Erg, color = "blue", alpha = 0.8,label = 'River Distance')
-ax.bar(x_value, Ocean, bottom = Erg, color = "cyan", alpha = 0.8,label = 'Ocean Distance')
+ax.bar(x_value, Ocean, bottom = River, color = "cyan", alpha = 0.8,label = 'Ocean Distance')
 
 ax.vlines([4],0,105,colors='black',ls='--',label='Capsize')
 ax.vlines([43],0,105,colors='red',ls='--',label='Great Ouse Marathon 2023')
