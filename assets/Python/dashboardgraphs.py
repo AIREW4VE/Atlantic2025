@@ -1,3 +1,5 @@
+#%%
+
 import pandas as pd
 import geopandas as gpd
 import numpy as np
@@ -6,7 +8,7 @@ import folium
 import os
 from folium.features import DivIcon
 import matplotlib.pyplot as plt 
-
+#%%
 
 
 training_data =pd.read_excel(r"C:\Users\jake\Documents\AtlanticCampaignGitHub\Atlantic2025\assets\TrainingData\TrainingBlogTimeLapse.xlsx",sheet_name='Logs')
@@ -39,7 +41,7 @@ ax.set_ylabel('Weekly Distance / km ')
 plt.savefig(r'C:\Users\jake\Documents\AtlanticCampaignGitHub\Atlantic2025\assets\Python\Outputs\TrainingBarChart\BarChartDistance.png')
 plt.show()
 
-
+#%%
 
 geo_location_data =pd.read_excel(r"C:\Users\jake\Documents\AtlanticCampaignGitHub\Atlantic2025\assets\TrainingData\TrainingBlogTimeLapse.xlsx",sheet_name='WeeklyTotalsCoords')
 geo_location_data = gpd.GeoDataFrame(geo_location_data,geometry=gpd.points_from_xy(geo_location_data['Longitude'],geo_location_data['Latitude']),crs='epsg:4326')
@@ -61,7 +63,8 @@ atlantic
 
 
 from html2image import Html2Image
-hti = Html2Image(output_path=r'C:\Users\jake\Documents\AtlanticCampaignGitHub\Atlantic2025\assets\Python\Outputs\RowingGeoPath',custom_flags=['--virtual-time-budget=100000', '--hide-scrollbars'])
+hti = Html2Image(output_path=r'C:\Users\jake\Documents\AtlanticCampaignGitHub\Atlantic2025\assets\Python\Outputs\RowingGeoPath',
+                 custom_flags=['--virtual-time-budget=100000', '--hide-scrollbars'])
 
 coords = geo_location_data[['Latitude','Longitude']].to_numpy().tolist()
 count = 0
@@ -104,7 +107,7 @@ for i in np.arange(len(coords)):
     hti.screenshot(html_file=filepath,save_as="Image"+str(count)+".jpg").append(frames)
     count+=1
 
-
+#%%
 import glob
 from PIL import Image
 def number(filename):
@@ -116,3 +119,4 @@ frames = [Image.open(image) for image in sorted(glob.glob(r"C:\Users\jake\Docume
 frame_one = frames[0]
 frame_one.save(r'C:\Users\jake\Documents\AtlanticCampaignGitHub\Atlantic2025\assets\Python\Outputs\RowingGeoPath\Rowing.gif', format="GIF", append_images=frames,
                    save_all=True, duration=250, loop=0)
+# %%
